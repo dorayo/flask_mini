@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<h1>{{ _('找不到请求的文件') }}</h1>
+<p>
+    <a href="{{ url_for('main.index') }}">{{ _('返回首页') }}</a>
+</p>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+<h1>{{ _('发生了一个意外错误！') }}</h1>
+<p>
+    {{ _('管理员已经接到通知，很抱歉给您带来了不便！') }}
+</p>
+<p>
+    <a href="{{ url_for('main.index') }}">{{ _('返回首页') }}</a>
+</p>
+{% endblock %}
